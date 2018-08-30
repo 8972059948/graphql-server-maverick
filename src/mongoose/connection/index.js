@@ -30,7 +30,7 @@ const options = {
 	socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
 };
 
-const mlab_connection = mongoose.connect(localurl, options, (err) => {
+const mlab_connection = mongoose.connect(mlaburl, options, (err) => {
 	if(err) {
 		console.log('Cloud Connection Error.. ',err.stack);
 	} else {
